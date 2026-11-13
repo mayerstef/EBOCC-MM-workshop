@@ -5,8 +5,8 @@ title: "EBOCC Marine Mammal Expert Workshop"
 description: "Co-designing future marine mammal data flows and collaboration for European biodiversity observation. Brussels and online, 27 November 2026."
 
 # Local preview settings
-url: ""
-baseurl: ""
+url: "https://mayerstef.github.io"
+baseurl: "/EBOCC-MM-workshop"
 
 google_analytics_key: ""
 google_maps_javascript_api_key:
