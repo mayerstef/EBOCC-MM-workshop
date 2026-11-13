@@ -1,40 +1,45 @@
 ---
-title: Consortium partners
-description: EBOCC Marine Mammal Expert Workshop
+title: Contacts
+description: Contact the EBOCC workshop team
 image: /new_imgs/eddy.png
 ---
+
 <section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
   <div class="inner-hero text-container">
     <div class="hero-text-container">
       <div class="heading-landing">
-        <h1 class="hero-title">Consortium partners</h1>
-        <p class="subtext editable bold-large-text">EBOCC Marine Mammal Expert Workshop</p>
+        <h1 class="hero-title">Contacts</h1>
+        <p class="subtext editable bold-large-text">
+          EBOCC Marine Mammal Expert Workshop
+        </p>
       </div>
     </div>
   </div>
 </section>
 
-{% assign partners = site.organizers | sort: 'name' %}
 <section class="pad">
   <div class="container">
-    <h2>Consortium partners ({{ partners | size }})</h2>
-    <ul class="staff">
-      {% for person in partners %}
-        {% include participant-card.html person=person %}
-      {% endfor %}
-    </ul>
-    <p>See also the <a href="{{ '/attendees/' | relative_url }}">experts attending in person and remotely</a>.</p>
-  </div>
-</section>
-<section class="pad" aria-labelledby="contact">
-  <div class="container">
-    <h2 id="contact">Contact</h2>
-    <p>For questions about the programme, practical arrangements or reimbursement, or for assistance on the day, contact:</p>
-    <ul>
-      <li><strong>Marina Diaz</strong> · <a href="mailto:marina.diaz@vliz.be">marina.diaz@vliz.be</a></li>
-      <li><strong>Stefanie Mayer</strong> · <a href="mailto:stefanie.mayer@vliz.be">stefanie.mayer@vliz.be</a></li>
-    </ul>
-    <p>We look forward to welcoming you in Brussels.</p>
-  </div>
-</section>
+    <h2>Contact the workshop team</h2>
+    <p>
+      For questions about the programme, practical arrangements or
+      reimbursement, or for assistance on the day, please contact:
+    </p>
 
+    <ul class="staff">
+      <li>
+        <div class="name">Marina Diaz</div>
+        <div class="position">VLIZ</div>
+        <p>
+          <a href="mailto:marina.diaz@vliz.be">marina.diaz@vliz.be</a>
+        </p>
+      </li>
+      <li>
+        <div class="name">Stefanie Mayer</div>
+        <div class="position">VLIZ</div>
+        <p>
+          <a href="mailto:stefanie.mayer@vliz.be">stefanie.mayer@vliz.be</a>
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
