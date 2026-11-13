@@ -1,0 +1,7 @@
+<li>
+  <div class="name">{{ include.person.name | escape }}</div>
+  {% if include.person.position != empty %}
+    <div class="position">{{ include.person.position | escape }}</div>
+  {% endif %}
+  <div class="position2">{% if include.person.attendance == 'remote' %}Remote{% else %}In person{% endif %}</div>
+</li>
