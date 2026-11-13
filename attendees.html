@@ -1,35 +1,40 @@
 ---
-title: Experts
+title: Attendees
 description: EBOCC Marine Mammal Expert Workshop
 image: /new_imgs/DallE-background-speaker.png
 ---
+
 <section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
   <div class="inner-hero text-container">
     <div class="hero-text-container">
       <div class="heading-landing">
-        <h1 class="hero-title">Experts</h1>
-        <p class="subtext editable bold-large-text">EBOCC Marine Mammal Expert Workshop</p>
+        <h1 class="hero-title">Attendees</h1>
+        <p class="subtext editable bold-large-text">
+          EBOCC Marine Mammal Expert Workshop
+        </p>
       </div>
     </div>
   </div>
 </section>
 
-{% assign present = site.attendees | where: 'attendance', 'in_person' | sort: 'name' %}
-{% assign remote = site.attendees | where: 'attendance', 'remote' | sort: 'name' %}
+{% assign everyone = site.attendees | concat: site.organizers %}
+{% assign present = everyone | where: 'attendance', 'in_person' | sort: 'name' %}
+{% assign remote = everyone | where: 'attendance', 'remote' | sort: 'name' %}
+
 <section class="pad">
   <div class="container">
-    <h2>Experts — in person ({{ present | size }})</h2>
+    <h2>In person ({{ present | size }})</h2>
     <ul class="staff">
       {% for person in present %}
         {% include participant-card.html person=person %}
       {% endfor %}
     </ul>
-    <h2>Experts — remote ({{ remote | size }})</h2>
+
+    <h2>Remote ({{ remote | size }})</h2>
     <ul class="staff">
       {% for person in remote %}
         {% include participant-card.html person=person %}
       {% endfor %}
     </ul>
-    <p>See also the <a href="{{ '/organizers/' | relative_url }}">consortium partners</a>.</p>
   </div>
 </section>
