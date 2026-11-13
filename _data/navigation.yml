@@ -2,13 +2,13 @@
   link: /
 - name: Registration
   link: /registration/
-- name: Experts
+- name: Attendees
   link: /attendees/
 - name: Program
   link: /program/
 - name: Venue and logistics
   link: /venue/
-- name: Consortium partners
+- name: Contacts
   link: /organizers/
 - name: Documentation
   link: /documentation/
