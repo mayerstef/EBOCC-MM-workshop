@@ -1,30 +1,33 @@
 # ----
 # Site
 
-title: "Reimagining Ocean Ecology workshop"
-url: "https://ksimoens.github.io/SEASCAPE2024"
-baseurl: #"/baseurl"
+title: "EBOCC Marine Mammal Expert Workshop"
+description: "Co-designing future marine mammal data flows and collaboration for European biodiversity observation. Brussels and online, 27 November 2026."
+
+# Local preview settings
+url: ""
+baseurl: ""
+
 google_analytics_key: ""
 google_maps_javascript_api_key:
 disqus_shortname:
 
-# Values for the jekyll-seo-tag gem (http://github.com/jekyll/jekyll-seo-tag)
+# Replace the template icon with an EBOCC logo when available
 logo: /siteicon.png
-description: #App marketing template for Jekyll.
-author:
-  name:
-  email:
-  twitter: # twitter username without the @ symbol
-social:
-  name: #Frisco Template
-  links:
-    #- http://github.com/CloudCannon/frisco-jekyll-template
 
-# -----
+author:
+  name: "EBOCC project team"
+  email:
+  twitter:
+
+social:
+  name: "EBOCC"
+  links: []
+
+# ----
 # Build
 
-timezone: Etc/UTC
-
+timezone: Europe/Brussels
 permalink: pretty
 
 plugins:
@@ -38,6 +41,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - UPDATE_INSTRUCTIONS.txt
+  - LICENSE
   - LICENCE
 
 collections:
@@ -53,13 +58,12 @@ jekyll-archives:
   enabled: ['categories']
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
     values:
       layout: "default"
-  -
-    scope:
+
+  - scope:
       type: "posts"
     values:
       layout: "post"
@@ -71,13 +75,13 @@ defaults:
         content:
           width: 1500
           height: 2000
-  -
-    scope:
+
+  - scope:
       path: "contact-success.html"
     values:
       layout: "page"
-  -
-    scope:
+
+  - scope:
       path: ""
       type: "pages"
     values:
@@ -90,21 +94,18 @@ defaults:
         height: 1322
         resize_style: cover
 
-# -----------
+# ----
 # CloudCannon
 
 social_icons:
   - Facebook
-  - Google Plus
   - Instagram
   - LinkedIn
-  - Pinterest
-  - Tumblr
   - Twitter
   - YouTube
   - Email
   - RSS
 
 _comments:
-  description: #Text shown when sharing on social media
-  blurb: #Short bio or description of this person
+  description: "Text shown when sharing the website."
+  blurb: "Short biography or description of this participant."
